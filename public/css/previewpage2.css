@@ -1,0 +1,636 @@
+@font-face {
+    font-family: "TTSquaresCondensed-Thin";
+    src: url('https://dev.invp.co.th/intern/image/DODGE.ttf');
+  }
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+    
+.bg {
+    /* The image used */
+    background-image: url("https://dev.invp.co.th/intern/image/Background.png");
+
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#box {
+    position: absolute;
+    left: 50vw;
+    top: 31vh;
+}
+
+#line {
+    position: absolute;
+    left: 13vw;
+    top: 6vh;
+    z-index: 1;
+}
+
+#profile {
+    border-radius: 50%;
+    position: absolute;
+    right: 35vw;
+    top: 17vh;
+}
+
+h1 {
+    font: normal 6.875em/1.25 "TTSquaresCondensed-Thin";
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 4vw;
+    color: gray;
+}
+
+#name { 
+    font: normal 6.875em/1.25 "Sarabun";
+    color: aliceblue;
+    z-index: 4;
+    font-size: 7vh;
+    position: absolute;
+    top: 37vh;
+    left: 51vw;
+}
+
+#textbot {
+    font: normal 6.875em/1.25 "Sarabun";
+    color: aliceblue;
+    z-index: 4;
+    font-size: 4vh;
+    width: 41vw;
+    height: 140px;
+    position: absolute;
+    top: 54vh;
+    left: 51vw;
+}
+
+#texttop {
+    font: normal 6.875em/1.25 "Sarabun";
+    text-align: right;
+    color: aliceblue;
+    z-index: 4;
+    font-size: 4vh;
+    position: absolute;
+    top: 31vh;
+    left: 75vw;
+    width: 38vw;
+}
+
+.aquamarine {
+    color:#599b9a;
+}
+
+.loader-left {
+    position: absolute !important;
+    top: 3% !important;
+    left: 2% !important;
+    margin: auto !important;
+    width: 175px !important;
+    height: 100px !important;
+}
+
+.loader-right {
+    position: absolute !important;
+    top: 3% !important;
+    right: 2% !important;
+    margin: auto !important;
+    width: 175px !important;
+    height: 100px !important;
+}
+
+/* ipad */
+@media only screen and (min-width: 768px){
+    #box {
+        position: absolute;
+        left: 33vw;
+        top: 36vh;
+        width: 65vw;
+    }
+    #line {
+        left: 30vw;
+        top: 48vh;
+        width: 58vw;
+    }
+    #profile {
+        right: 69vw;
+        top: 44vh;
+        width: 28vw;
+    }
+    #name {
+        font-size: 4vh;
+        top: 44vh;
+        left: 37vw;
+    }
+    #texttop {
+        left: 58vw;
+        top: 38vh;
+        font-size: 3vw;
+    }
+    #textbot {
+        font-size: 3vh;
+        top: 56vh;
+        left: 37vw;
+        width: 57vw;
+    }
+    .loader-right {
+        right: 0% !important;
+        width: 200px !important;
+        height: 170px !important;
+    }
+    .loader-left {
+        width: 200px !important;
+        height: 170px !important;
+    }
+    .bg {
+        height: 100%;
+        width: 100%;
+    }
+    h1 {
+        font-size: 43px !important;
+        top: 4vh;
+        position: relative;
+    }
+}
+
+/* Ipad Pro */
+@media only screen and (min-width: 1024px) {
+    .bg {
+        height: 100%;
+        width: 100%;
+    }
+    #box {
+        position: absolute;
+        left: 34vw;
+        top: 28vh;
+        width: 50vw;
+    }
+    #line {
+        left: 30vw;
+        top: 38vh;
+        width: 49vw;
+    }
+    #profile {
+        right: 69vw;
+        top: 36vh;
+        width: 22vw;
+    }
+    #name {
+        font-size: 3vw;
+        top: 35vh;
+        left: 37vw;
+    }
+    #texttop {
+        left: 68vw;
+        top: 29vh;
+        font-size: 3vw;
+    }
+    #textbot {
+        font-size: 2vw;
+        top: 45vh;
+        left: 37vw;
+    }
+}
+
+@media only screen and (min-width: 890px) {
+    .bg {
+        height: 100%;
+        width: 100%;
+    }
+    #box {
+        position: absolute;
+        left: 34vw;
+        top: 28vh;
+        width: 50vw;
+    }
+    #line {
+        left: 30vw;
+        top: 39vh;
+        width: 49vw;
+    }
+    #profile {
+        right: 69vw;
+        top: 36vh;
+        width: 22vw;
+    }
+    #name {
+        font-size: 4vw;
+        top: 35vh;
+        left: 37vw;
+    }
+    #texttop {
+        left: 44vw;
+        top: 29vh;
+        font-size: 3vw;
+    }
+    #textbot {
+        font-size: 3vw;
+        top: 46vh;
+        left: 37vw;
+        width: 43vw;
+        height: 13vw;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .bg {
+        height: 100%;
+        width: 100%;
+    }
+    #box {
+        position: absolute !important;
+        left: 34vw !important;
+        top: 24vh !important;
+        width: 50vw !important;
+    }
+    #line {
+        left: 30vw !important;
+        top: 40vh !important;
+        width: 49vw !important;
+    }
+    #profile {
+        right: 69vw !important;
+        top: 36vh !important;
+        width: 22vw !important;
+    }
+    #name {
+        font-size: 3vw !important;
+        top: 36vh !important;
+        left: 37vw !important;
+    }
+    #texttop {
+        left: 44vw !important;
+        top: 26vh !important;
+        font-size: 3vw !important;
+    }
+    #textbot {
+        font-size: 2.6vw !important;
+        top: 51vh !important;
+        left: 37vw !important;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .bg {
+        height: 100%;
+        width: 100%;
+    }
+    #box {
+        position: absolute;
+        left: 34vw;
+        top: 25vh;
+        width: 45vw;
+    }
+    #line {
+        left: 30vw;
+        top: 44vh;
+        width: 40vw;
+    }
+    #profile {
+        right: 69vw;
+        top: 36vh;
+        width: 22vw;
+    }
+    #name {
+        font-size: 3vw;
+        top: 39vh;
+        left: 36vw;
+    }
+    #texttop {
+        left: 39vw;
+        top: 27vh;
+        font-size: 2vw;
+    }
+    #textbot {
+        font-size: 2vw;
+        top: 54vh;
+        left: 36vw;
+        width: 41vw;
+        height: 14vh;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .bg {
+        height: 100%;
+        width: 100%;
+    }
+    #box {
+        position: absolute;
+        left: 34vw;
+        top: 25vh;
+        width: 45vw;
+    }
+    #line {
+        left: 30vw;
+        top: 44vh;
+        width: 40vw;
+    }
+    #profile {
+        right: 69vw;
+        top: 36vh;
+        width: 22vw;
+    }
+    #name {
+        font-size: 3vw;
+        top: 39vh;
+        left: 36vw;
+    }
+    #texttop {
+        left: 39vw;
+        top: 27vh;
+        font-size: 2vw;
+    }
+    #textbot {
+        font-size: 2vw;
+        top: 53vh;
+        left: 36vw;
+        width: 41vw;
+        height: 14vh;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    .bg {
+        height: 100%;
+        width: 100%;
+    }
+    #box {
+        position: absolute;
+        left: 34vw;
+        top: 25vh;
+        width: 45vw;
+    }
+    #line {
+        left: 30vw;
+        top: 44vh;
+        width: 40vw;
+    }
+    #profile {
+        right: 69vw;
+        top: 36vh;
+        width: 22vw;
+    }
+    #name {
+        font-size: 3vw;
+        top: 39vh;
+        left: 36vw;
+    }
+    #texttop {
+        left: 39vw;
+        top: 27vh;
+        font-size: 2vw;
+    }
+    #textbot {
+        font-size: 2vw;
+        top: 55vh;
+        left: 36vw;
+        width: 41vw;
+        height: 14vh;
+    }
+}
+
+@media only screen and (max-height:600px) {
+    .bg {
+        height: 100%;
+        width: 100%;
+    }
+    #box {
+        position: absolute;
+        left: 34vw;
+        top: 25vh;
+        width: 45vw;
+    }
+    #line {
+        left: 30vw;
+        top: 47vh;
+        width: 40vw;
+    }
+    #profile {
+        right: 69vw;
+        top: 36vh;
+        width: 22vw;
+    }
+    #name {
+        font-size: 3vw;
+        top: 40vh;
+        left: 36vw;
+    }
+    #texttop {
+        left: 39vw;
+        top: 27vh;
+        font-size: 2vw;
+    }
+    #textbot {
+        font-size: 2vw;
+        top: 60vh;
+        left: 36vw;
+        width: 41vw;
+        height: 14vh;
+    }
+}
+/* Iphone 6/7/8 ios11 */
+@media only screen and (max-height:667px), only screen and (max-width: 375px) {
+    .bg {
+        height: 100%;
+        width: 100%;
+    }
+    #box {
+        position: absolute;
+        left: 44vw;
+        top: 39vh;
+        width: 30vh;
+    }
+    #line {
+        position: absolute;
+        left: 39vw;
+        top: 46vh;
+        z-index: 1;
+        width: 32vh;
+    }
+    #profile {
+        border-radius: 50%;
+        position: absolute;
+        right: 60vw;
+        top: 42vh;
+        width: 19vh;
+    }
+    #name {
+        font: normal 6.875em/1.25 "Sarabun";
+        color: aliceblue;
+        z-index: 4;
+        font-size: 3vh;
+        position: absolute;
+        top: 42vh;
+        left: 47vw;
+    }
+    #texttop {
+        font: normal 6.875em/1.25 "Sarabun";
+        text-align: right;
+        color: aliceblue;
+        z-index: 4;
+        font-size: 2vh;
+        position: absolute;
+        top: 39vh;
+        left: 57vw;
+        width: 38vw;
+    }
+    #textbot {
+        font: normal 6.875em/1.25 "Sarabun";
+        color: aliceblue;
+        z-index: 4;
+        font-size: 2vh;
+        width: 48vw;
+        height: 39px;
+        position: absolute;
+        top: 51vh;
+        left: 46vw;
+    }
+}
+
+@media only screen and (max-height: 736px), only screen and (max-width: 414px) {
+    .bg {
+        height: 100%;
+        width: 100%;
+    }
+    #box {
+        position: absolute;
+        left: 41vw;
+        top: 38vh;
+        width: 27vh;
+    }
+    #line {
+        position: absolute;
+        left: 39vw;
+        top: 46vh;
+        z-index: 1;
+        width: 32vh;
+    }
+    #profile {
+        border-radius: 50%;
+        position: absolute;
+        right: 60vw;
+        top: 42vh;
+        width: 19vh;
+    }
+    #name {
+        font: normal 6.875em/1.25 "Sarabun";
+        color: aliceblue;
+        z-index: 4;
+        font-size: 3vh;
+        position: absolute;
+        top: 42vh;
+        left: 47vw;
+    }
+    #texttop {
+        font: normal 6.875em/1.25 "Sarabun";
+        text-align: right;
+        color: aliceblue;
+        z-index: 4;
+        font-size: 2vh;
+        position: absolute;
+        top: 39vh;
+        left: 57vw;
+        width: 38vw;
+    }
+    #textbot {
+        font: normal 6.875em/1.25 "Sarabun";
+        color: aliceblue;
+        z-index: 4;
+        font-size: 2vh;
+        width: 48vw;
+        height: 39px;
+        position: absolute;
+        top: 51vh;
+        left: 46vw;
+    }
+}
+/* @media only screen and (max-height: 2160px), only screen and (max-width: 3840px){
+    #profile {
+        right: 69vw;
+        top: 35vh;
+        width: 22vw;
+    }
+    #name {
+        font-size: 4vh;
+        top: 40vh;
+        left: 36vw;
+    }
+    #texttop {
+        left: 68vw;
+        top: 29vh;
+        font-size: 4vh;
+    }
+    #textbot {
+        left: 36vw;
+        top: 54vh;
+        font-size: 3vh;
+    }
+    #line {
+        left: 30vw;
+        top: 43vh;
+        width: 49vw;
+    }
+  }
+  
+  @media only screen and (max-height: 1080px), only screen and (max-width: 1920px){
+    #profile {
+        right: 69vw;
+        top: 35vh;
+        width: 22vw;
+    }
+    #name {
+        font-size: 4vh;
+        top: 40vh;
+        left: 36vw;
+    }
+    #texttop {
+        left: 68vw;
+        top: 29vh;
+        font-size: 4vh;
+    }
+    #textbot {
+        left: 36vw;
+        top: 54vh;
+        font-size: 3vh;
+    }
+    #line {
+        left: 30vw;
+        top: 43vh;
+        width: 49vw;
+    }
+  }
+  
+  @media only screen and (max-height: 720px), only screen and (max-width: 1280px){
+    #profile {
+        right: 69vw;
+        top: 35vh;
+        width: 22vw;
+    }
+    #name {
+        font-size: 4vh;
+        top: 40vh;
+        left: 36vw;
+    }
+    #texttop {
+        left: 68vw;
+        top: 29vh;
+        font-size: 4vh;
+    }
+    #textbot {
+        left: 36vw;
+        top: 54vh;
+        font-size: 3vh;
+    }
+    #line {
+        left: 30vw;
+        top: 43vh;
+        width: 49vw;
+    }
+} */
